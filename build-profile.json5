@@ -1,6 +1,20 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "/Users/zhangxinmin/.ohos/config/default_harmony_sample_0xjQmEdqqSNfJsRaD0GX0-QytaRCXFwvyhjgur4dp9E=.cer",
+          "storePassword": "0000001B4267FD22C370D59EA47D2C649D5E97EFA5190BF63F68063D51EB84BC4487FD3799836645D120D0",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B0B1D3DC07F5F3E8CD21AEBA7EC7EFD51EA463F132EF8A4ED1BF99E12AB49564D76C276D18FF419",
+          "profile": "/Users/zhangxinmin/.ohos/config/default_harmony_sample_0xjQmEdqqSNfJsRaD0GX0-QytaRCXFwvyhjgur4dp9E=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "/Users/zhangxinmin/.ohos/config/default_harmony_sample_0xjQmEdqqSNfJsRaD0GX0-QytaRCXFwvyhjgur4dp9E=.p12"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
@@ -23,6 +37,18 @@
     {
       "name": "entry",
       "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "net",
+      "srcPath": "./net",
       "targets": [
         {
           "name": "default",

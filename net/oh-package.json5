@@ -1,0 +1,13 @@
+{
+  "name": "net",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    //network
+    "@ohos/axios": "^2.2.0"
+  }
+}
+

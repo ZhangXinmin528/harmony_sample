@@ -1,0 +1,33 @@
+{
+  "module": {
+    "name": "net",
+    "type": "feature",
+    "description": "$string:module_desc",
+    "mainElement": "NetAbility",
+    "deviceTypes": [
+      "phone",
+      "tablet",
+      "2in1"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "NetAbility",
+        "srcEntry": "./ets/netability/NetAbility.ets",
+        "description": "$string:NetAbility_desc",
+        "icon": "$media:layered_image",
+        "label": "$string:NetAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.INTERNET",
+      },
+    ]
+  }
+}
